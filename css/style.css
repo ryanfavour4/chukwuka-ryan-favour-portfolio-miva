@@ -375,20 +375,20 @@ nav a[aria-current]:after {
     width: 100%;
     aspect-ratio: 1 / 1.06;
     object-fit: cover;
-    /* border-radius: 32px; */
+    border-radius: 32px;
     /* background: var(--portrait); */
     /* border: 1px solid var(--border); */
     /* box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6); */
 }
 .portrait-label {
-    font-size: 9px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--accent);
     position: absolute;
     top: 26px;
-    left: 0;
-    transform: rotate(-90deg) translateX(-100%);
+    left: 50;
+    transform: rotate(0deg) translateX(10%);
     transform-origin: top left;
 }
 .floating-badge {
@@ -429,16 +429,6 @@ nav a[aria-current]:after {
     font-size: 55px;
     line-height: 1;
     text-shadow: 0 0 18px var(--primary);
-}
-.photo-caption {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    margin-top: 16px;
-    font-size: 8px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    color: var(--muted);
 }
 
 /* Modular Stats Metric Tiles */
@@ -1712,9 +1702,6 @@ textarea[aria-invalid="true"] {
         left: 5px;
         padding: 8px 12px;
         font-size: 10px;
-    }
-    .photo-caption {
-        font-size: 7px;
     }
     .stats-grid {
         grid-template-columns: 1fr;
