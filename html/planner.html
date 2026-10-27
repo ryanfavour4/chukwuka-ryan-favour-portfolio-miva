@@ -25,7 +25,11 @@
         <header class="site-header">
             <div class="container nav-wrap">
                 <a class="brand" href="/" aria-label="Ryan Favour">
-                    <img src="../images/logo.png" alt="Ryan Favour" class="site-logo" />
+                    <img
+                        src="../images/logo.png"
+                        alt="Ryan Favour"
+                        class="site-logo"
+                    />
                 </a>
                 <button
                     class="menu-toggle"
@@ -50,11 +54,13 @@
                     <a href="/">Home</a>
                     <a href="/html/about.html">About Me</a>
                     <a href="/html/projects.html">Projects</a>
-                    <a href="/html/planner.html" aria-current="page">Academic Planner</a>
+                    <a href="/html/planner.html" aria-current="page"
+                        >Academic Planner</a
+                    >
                     <a href="/html/contact.html">Contact</a>
                 </nav>
                 <a class="nav-cta" href="/html/contact.html">
-                    Let’s connect
+                    Reach Out
                     <svg
                         viewBox="0 0 24 24"
                         width="20"
@@ -90,9 +96,42 @@
                     </div>
                     <div class="quick-tasks">
                         <span class="quick-task-label">Quick add:</span>
-                        <button type="button" class="quick-chip" onclick="document.getElementById('task-input').value='Review CSC 106 study notes';document.getElementById('task-category').value='Revision';">+ CSC 106 Notes</button>
-                        <button type="button" class="quick-chip" onclick="document.getElementById('task-input').value='Finalize and submit portfolio report';document.getElementById('task-category').value='Assignment';">+ Submit Report</button>
-                        <button type="button" class="quick-chip" onclick="document.getElementById('task-input').value='Prepare Exam Revision Checklist';document.getElementById('task-category').value='Examination';">+ Exam Checklist</button>
+                        <button
+                            type="button"
+                            class="quick-chip"
+                            onclick="
+                                document.getElementById('task-input').value =
+                                    'Review CSC 106 study notes';
+                                document.getElementById('task-category').value =
+                                    'Revision';
+                            "
+                        >
+                            + CSC 106 Notes
+                        </button>
+                        <button
+                            type="button"
+                            class="quick-chip"
+                            onclick="
+                                document.getElementById('task-input').value =
+                                    'Finalize and submit portfolio report';
+                                document.getElementById('task-category').value =
+                                    'Assignment';
+                            "
+                        >
+                            + Submit Report
+                        </button>
+                        <button
+                            type="button"
+                            class="quick-chip"
+                            onclick="
+                                document.getElementById('task-input').value =
+                                    'Prepare Exam Revision Checklist';
+                                document.getElementById('task-category').value =
+                                    'Examination';
+                            "
+                        >
+                            + Exam Checklist
+                        </button>
                     </div>
                     <!-- Tasks live in a JavaScript array for this session. -->
                     <form id="task-form" class="task-form">
@@ -159,9 +198,7 @@
                                     height="16"
                                     rx="2"
                                 />
-                                <path
-                                    d="M16 3v4M8 3v4M3 11h18m-12 4h2m3 0h2"
-                                />
+                                <path d="M16 3v4M8 3v4M3 11h18m-12 4h2m3 0h2" />
                             </svg>
                         </span>
                         <h3>A fresh start.</h3>
@@ -226,7 +263,11 @@
         <footer>
             <div class="container footer-top">
                 <a class="brand" href="/" aria-label="Ryan Favour">
-                    <img src="../images/logo.png" alt="Ryan Favour" class="site-logo" />
+                    <img
+                        src="../images/logo.png"
+                        alt="Ryan Favour"
+                        class="site-logo"
+                    />
                 </a>
                 <p>A little curiosity. A lot of possibility.</p>
                 <div class="socials">
@@ -294,9 +335,16 @@
                 </div>
             </div>
             <div class="container footer-bottom">
-                <span>© <span class="year">2026</span> Ryan Favour. All rights reserved.</span>
-                <span>Made with curiosity & a little code <span class="blue-star">✳</span></span>
+                <span
+                    >© <span class="year">2026</span> Ryan Favour. All rights
+                    reserved.</span
+                >
+                <span
+                    >Made with curiosity & a little code
+                    <span class="blue-star">✳</span></span
+                >
             </div>
         </footer>
     </body>
 </html>
+
