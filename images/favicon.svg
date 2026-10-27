@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
- <rect width="64" height="64" rx="14" fill="#161b20" /><text x="10" y="46" fill="white" font-size="47"
-  font-weight="bold" font-family="Arial">m</text>
- <circle cx="53" cy="46" r="4" fill="#8dd1f5" />
+  <circle cx="32" cy="32" r="32" fill="#b39fa8" />
+  <circle cx="32" cy="32" r="28" fill="#7A2E7C" />
+  <circle cx="32" cy="32" r="23" fill="#ffffff" />
+  <polygon points="32,15 23,37 41,37" fill="#C6C26C" />
+  <text x="32" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#7A2E7C" text-anchor="middle" letter-spacing="1">RF</text>
 </svg>

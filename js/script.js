@@ -216,12 +216,15 @@ if (projectDetail) {
     const project = new URLSearchParams(window.location.search).get("project");
 
     const demos = [
-        '<div class="eyebrow">MATIVABUDDY · MINI DEMO</div><h2>A little help for your next study session.</h2><p>Choose a topic to explore a few quick study notes.</p><div class="demo-resources"><details class="demo-item"><summary>HTML foundations</summary><ul><li>Use semantic tags to give your page meaning.</li><li>Label every form field.</li><li>Give images descriptive alternative text.</li></ul></details><details class="demo-item"><summary>CSS essentials</summary><ul><li>Use Flexbox for rows and Grid for layouts.</li><li>Keep colors in reusable variables.</li><li>Test your page on small screens.</li></ul></details><details class="demo-item"><summary>JavaScript basics</summary><ul><li>Store related items in an array.</li><li>Use functions to organize repeated actions.</li><li>Listen for events to make pages interactive.</li></ul></details></div>',
-        '<div class="eyebrow">CAMPUS FOOD GUIDE · MINI DEMO</div><h2>A good meal without the big spend.</h2><p>Illustrative campus food options — names and prices are sample content, not real businesses.</p><div class="demo-resources"><article class="demo-item"><h3>Campus Kitchen</h3><p>Rice & vegetables<br>Sample price: ₦1,500<br>Near the main gate</p></article><article class="demo-item"><h3>The Green Bowl</h3><p>Beans & plantain<br>Sample price: ₦1,200<br>Beside the student centre</p></article><article class="demo-item"><h3>Lunch Corner</h3><p>Sandwich & fruit<br>Sample price: ₦1,000<br>Near the library</p></article></div>',
-        '<div class="eyebrow">STUDENT RESULT CALCULATOR · MINI DEMO</div><h2>Your results, a little clearer.</h2><p>Enter scores between 0 and 100, separated by commas. Sample grading: A ≥ 70, B ≥ 60, C ≥ 50, D ≥ 45, E ≥ 40, F below 40.</p><form id="calculator-form"><div class="field"><label for="scores">Your scores</label><input id="scores" placeholder="85, 78, 92" required aria-describedby="calculator-result"></div><button class="button primary" type="submit">Calculate average ↗</button><p id="calculator-result" role="status"></p></form>',
+        '<div class="eyebrow">ZANGAPAY · ARCHITECTURE OVERVIEW</div><h2>Wallets, Cards &amp; KYC Services.</h2><p>A resilient backend payments architecture designed with Node.js, TypeScript and PostgreSQL.</p><div class="demo-resources"><article class="demo-item"><h3>Virtual Cards</h3><p>Instant issuance, dynamic spending limits, and webhook-driven transaction authorization.</p></article><article class="demo-item"><h3>Wallet Engine</h3><p>Multi-currency balances, automated ledger auditing, and double-entry transaction safety.</p></article><article class="demo-item"><h3>KYC &amp; Security</h3><p>Automated identity verification, webhook notifications, and role-based access control.</p></article></div>',
+        '<div class="eyebrow">SUMPAY · TRADING CALCULATOR</div><h2>Instant crypto &amp; gift-card payout estimation.</h2><p>Sample pricing preview: USDT @ ₦1,650/$, BTC @ ₦1,680/$, Steam Gift Card @ ₦1,250/$. Enter trade amounts in USD, separated by commas.</p><form id="calculator-form"><div class="field"><label for="scores">Trading amounts (USD)</label><input id="scores" placeholder="100, 250, 500" required aria-describedby="calculator-result"></div><button class="button primary" type="submit">Estimate payout ↗</button><p id="calculator-result" role="status"></p></form>',
+        '<div class="eyebrow">GEO MAP APP · DEMO PREVIEW</div><h2>Interactive Donation Project Mapping.</h2><p>Visualizing community projects, schools and relief centres in real time.</p><div class="demo-resources"><article class="demo-item"><h3>Education Hubs</h3><p>Primary school centres with live campaign status and student counts.</p></article><article class="demo-item"><h3>Relief Centres</h3><p>Community food banks and supply hubs mapped with GPS coordinates.</p></article><article class="demo-item"><h3>Campaign Tracking</h3><p>Interactive donor progress markers and verified delivery routes.</p></article></div>',
+        '<div class="eyebrow">MYITURA · TECH STACK HIGHLIGHT</div><h2>High-Performance Hypermedia Web App.</h2><p>Built with Go, Templ and HTMX for instant server rendering and fluid client interactivity.</p><div class="demo-resources"><article class="demo-item"><h3>Go Backend</h3><p>Compiled binaries with minimal memory footprint and fast startup times.</p></article><article class="demo-item"><h3>Templ Components</h3><p>Type-safe server-rendered HTML components compiled to clean Go code.</p></article><article class="demo-item"><h3>HTMX Extensions</h3><p>Declarative AJAX, CSS transitions and WebSockets directly in HTML markup.</p></article></div>',
+        '<div class="eyebrow">KROWDFI · PRODUCT ARCHITECTURE</div><h2>Crowdfunding &amp; Community Payouts.</h2><p>Empowering African founders and initiatives with transparent group funding.</p><div class="demo-resources"><article class="demo-item"><h3>Escrow Safety</h3><p>Milestone-based release of funds with multi-party signature approvals.</p></article><article class="demo-item"><h3>Transparent Backing</h3><p>Real-time progress updates, tiered rewards, and backer validation.</p></article><article class="demo-item"><h3>Instant Settlement</h3><p>Automated bank disbursements upon reaching verified funding milestones.</p></article></div>',
+        '<div class="eyebrow">REACT-VALIDATOR · OVERVIEW</div><h2>Published React Validation Library.</h2><p>Declarative form validation with zero dependencies and TypeScript type inference.</p><div class="demo-resources"><article class="demo-item"><h3>Lightweight</h3><p>&lt; 2.1 kB minified and gzipped, zero runtime dependencies.</p></article><article class="demo-item"><h3>Type-Safe</h3><p>Full TypeScript inference for schema shapes and validation error maps.</p></article><article class="demo-item"><h3>Custom Rules</h3><p>Simple composable validator functions for synchronous and async rules.</p></article></div>',
     ];
 
-    if (project !== null && ["0", "1", "2"].includes(project)) {
+    if (project !== null && ["0", "1", "2", "3", "4", "5"].includes(project)) {
         projectDetail.hidden = false;
 
         projectDetail.innerHTML = demos[Number(project)];
@@ -237,46 +240,35 @@ if (projectDetail) {
                     .map(function (part) {
                         return part.trim();
                     });
-                const scores = pieces.map(Number);
+                const amounts = pieces.map(Number);
                 const output = document.querySelector("#calculator-result");
                 if (
                     pieces.some(function (piece) {
                         return !piece;
                     }) ||
-                    scores.some(function (score) {
+                    amounts.some(function (amount) {
                         return (
-                            !Number.isFinite(score) || score < 0 || score > 100
+                            !Number.isFinite(amount) || amount <= 0
                         );
                     })
                 ) {
                     output.textContent =
-                        "Please use numbers from 0 to 100, separated by commas.";
+                        "Please enter numbers greater than 0, separated by commas.";
                     return;
                 }
-                const average =
-                    scores.reduce(function (sum, score) {
-                        return sum + score;
-                    }, 0) / scores.length;
-                const grade =
-                    average >= 70
-                        ? "A"
-                        : average >= 60
-                          ? "B"
-                          : average >= 50
-                            ? "C"
-                            : average >= 45
-                              ? "D"
-                              : average >= 40
-                                ? "E"
-                                : "F";
+                const rate = 1650;
+                const totalUSD = amounts.reduce(function (sum, amount) {
+                    return sum + amount;
+                }, 0);
+                const totalNGN = totalUSD * rate;
                 output.textContent =
-                    "Average: " +
-                    average.toFixed(1) +
-                    "% · Grade: " +
-                    grade +
-                    " · " +
-                    scores.length +
-                    " score(s)";
+                    "Total: $" +
+                    totalUSD.toLocaleString() +
+                    " · Estimated Payout: ₦" +
+                    totalNGN.toLocaleString() +
+                    " (at ₦" +
+                    rate.toLocaleString() +
+                    "/$)";
             });
         projectDetail.scrollIntoView({ block: "start" });
     }

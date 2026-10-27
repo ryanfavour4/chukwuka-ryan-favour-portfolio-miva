@@ -1,20 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 560 370">
- <rect width="560" height="370" fill="#e3eaf1" />
- <rect x="57" y="55" width="446" height="282" rx="8" fill="white" />
- <path d="M65 55h430a8 8 0 0 1 8 8v20H57V63a8 8 0 0 1 8-8" fill="#f6f8f9" />
- <circle cx="71" cy="69" r="3" fill="#bdcbd0" />
- <circle cx="82" cy="69" r="3" fill="#bdcbd0" />
- <circle cx="93" cy="69" r="3" fill="#bdcbd0" />
- <g font-family="Arial,sans-serif" fill="#172329"><text x="83" y="117" font-size="16"
-   font-weight="bold">resultly.</text><text x="374" y="115" font-size="9">Home Explore About</text><text x="90" y="173"
-   font-size="23" font-weight="bold">Know where you stand.</text><text x="90" y="199" font-size="12">A little less
-   maths. A little more clarity.</text>
-  <rect x="90" y="220" width="235" height="29" rx="4" fill="#f0f3f6" /><text x="104" y="239" font-size="11">Introduction
-   to programming 85</text>
-  <rect x="90" y="260" width="235" height="29" rx="4" fill="#f0f3f6" /><text x="104" y="279" font-size="11">Computer
-   fundamentals 78</text>
-  <rect x="347" y="219" width="124" height="100" rx="5" fill="#e4f2fa" /><text x="368" y="245" font-size="10">YOUR
-   AVERAGE</text><text x="369" y="285" font-size="37" font-weight="bold">81.5</text><text x="381" y="304"
-   font-size="11">Excellent!</text>
- </g>
+  <rect width="560" height="370" fill="#140e1c" />
+  <rect x="57" y="55" width="446" height="282" rx="12" fill="#1b1325" stroke="#352445" stroke-width="1.5" />
+  <path d="M69 55h422a12 12 0 0 1 12 12v20H57V67a12 12 0 0 1 12-12" fill="#22182e" />
+  <circle cx="75" cy="71" r="3.5" fill="#f87171" />
+  <circle cx="88" cy="71" r="3.5" fill="#C6C26C" />
+  <circle cx="101" cy="71" r="3.5" fill="#4ade80" />
+  <g font-family="system-ui, -apple-system, sans-serif" fill="#f4eef6">
+    <text x="83" y="118" font-size="16" font-weight="bold" fill="#b95fc2">geomap.</text>
+    <text x="340" y="116" font-size="10" fill="#a191a8">Inner City Mission · Maps API</text>
+    <text x="85" y="156" font-size="19" font-weight="bold" fill="#ffffff">Interactive Donation Project Map</text>
+    <text x="85" y="177" font-size="11" fill="#a191a8">Locating schools, relief projects, and campaigns with Google Maps.</text>
+    <rect x="85" y="196" width="245" height="114" rx="8" fill="#140e1c" stroke="#2d1f3b" />
+    <path d="M95 240 Q150 210 200 250 T310 220" stroke="#b95fc2" stroke-width="3" fill="none" opacity="0.8" />
+    <circle cx="150" cy="225" r="7" fill="#7A2E7C" stroke="#b95fc2" stroke-width="1.5" />
+    <circle cx="210" cy="250" r="7" fill="#C6C26C" />
+    <circle cx="280" cy="225" r="7" fill="#b95fc2" stroke="#ffffff" stroke-width="1" />
+    <text x="100" y="295" font-size="10" fill="#a191a8">📍 40+ Projects mapped in real time</text>
+    <rect x="345" y="196" width="130" height="114" rx="8" fill="#140e1c" stroke="#2d1f3b" />
+    <text x="358" y="226" font-size="10" font-weight="bold" fill="#b95fc2">PROJECT STATUS</text>
+    <text x="358" y="255" font-size="16" font-weight="bold" fill="#ffffff">In Progress</text>
+    <text x="358" y="278" font-size="10" fill="#a191a8">Demo on request</text>
+    <rect x="358" y="286" width="68" height="16" rx="8" fill="#C6C26C" />
+    <text x="366" y="298" font-size="9" font-weight="bold" fill="#140e1c">LIVE DEMO</text>
+  </g>
 </svg>
